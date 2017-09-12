@@ -1,0 +1,527 @@
+#pag{
+     margin: auto;
+     background-color: #FFEFD5;
+     text-align: center;
+    border: 3px solid white;
+    font-style: normal;
+  	font-size: 20px;
+    font-variant: small-caps;
+}
+
+.pre{
+    width: 550px;
+    height: 25px;
+}
+
+.pg{
+    width: 25px;
+    height: 25px;
+}
+
+.hst{
+    width: 780px;
+    height: 150px;
+}
+
+.lbl{
+    color:crimson;
+    font-style: normal;
+  	font-size: 18px;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.btn-info{
+    background-color: crimson;
+    height: 50px;
+    width: 100px;
+    border-top-left-radius:15px;
+    border-top-right-radius:0;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:0;
+    font-variant: small-caps;    
+    }
+#nuevo
+{
+    position: absolute;
+    left:10px;
+    width: 30%;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.cssPregunta{
+   position: absolute;
+    right:10px;
+    width: 30%;
+    font-style: normal;
+    font-size: 20px; 
+    text-align: center;
+    padding: 10px;;
+}
+
+
+
+.test {
+    color: #000;
+    padding: .5em;
+    width: 100%;
+   
+  }
+  .active {
+    color: #900;
+  }
+  .inside {
+    background-color: aqua;
+      width: 100%;
+  }
+#imagen{
+     display: block;
+    margin: 0 auto;
+}
+
+ .w3-hover-text-khaki{
+            cursor:pointer;
+            color:black;
+            width: 50%;
+            size: 20px;
+           
+        }
+.w3-left{
+	position: 100px;
+    left: : 0px;
+    width: 50%;
+
+}
+.w3-right{
+	position: absolute;
+    right:0px;
+      width: 50%;
+
+}
+
+#errorWin{
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    border: 3px solid #e60000;
+    text-align: center;
+    padding: 10px;
+    font-style: normal;
+    font-size: 40px;
+    color:#e60000;
+}
+
+
+/**/
+.block{
+ position: absolute;
+    left: 50px;
+    width: 200px;
+    height: 200px;
+	background-image: url(../recursos/imagenes/Bloom.png);
+}
+}
+
+.buttonAdm {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-variant: small-caps;
+}
+
+.hid {
+    display:none;
+     width: 600px;   
+    border:1px solid #f9f9f9;
+    font-variant: small-caps;
+}
+.tab{
+    height:380px;
+    font-variant: small-caps;
+
+}
+.esquema{
+    height:310px;
+    width: 800px;
+    border:1px solid #f9f9f9;
+    overflow:auto;
+    z-index: 0;
+   
+}
+
+#paginas div{
+    vertical-align: top;
+    
+}
+
+  .w3-hover-text-khaki{
+            cursor:pointer;
+            color:black;
+        }
+
+#paginas1{
+      text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+            color:#fff;
+            font-size: 20px;
+            align-content: center;
+     
+}
+
+textarea{
+    height:200px;
+  width:  180px;
+    overflow:auto;
+    
+  
+}
+
+.adm{
+    height:320px;
+    border:1px solid #f9f9f9;
+    color: white;
+}
+
+
+table{
+     border: 4px solid #f9f9f9;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.70);
+    color:aqua;
+}
+.tablista
+{
+    height:200px;
+    width:  180px;
+    border: 4px solid #f9f9f9;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.60);
+    color: white;
+    
+    width: 100%;
+}
+
+
+.prueba{
+    text-align:center;
+    right: -100px;
+}
+
+ .imgCuento{
+position: relative;
+    right: -300px;
+   
+}
+
+.textoCuento{
+
+   position: relative;
+    
+}
+
+
+
+enu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+p
+{
+   color:  lightcoral;  
+    height: 10px;
+    width:  10px;
+    font-size: 18px;
+	letter-spacing: 1px;
+}
+
+a
+{
+   color:  lightcoral;  
+  font-weight: 700;
+    font-size: 14px;
+	letter-spacing: 1px;
+}
+
+
+/*posicion*/
+.ch-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+	content: '';
+    display: table;
+}
+
+.ch-grid:after {
+	clear: both;
+}
+
+/*sin el no funciona los circulos*/
+.ch-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+/**/
+.ch-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	cursor: default;
+	-webkit-perspective: 900px;
+	-moz-perspective: 900px;
+	-o-perspective: 900px;
+	-ms-perspective: 900px;
+	perspective: 900px;
+}
+.ch-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+/*
+/* div que contiene las esferas*//*
+.ch-info > div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+*/
+.ch-info .ch-info-front {
+	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
+}
+
+/*.ch-info .ch-info-back {
+	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	-ms-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
+	background: #000;
+	opacity: 0;
+}
+*/
+.ch-img-1 { 
+	background-image: url(../recursos/imagenes/cuento1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(../recursos/imagenes/cuento2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(../recursos/imagenes/cuento3.jpg);
+}
+.ch-img-4 { 
+	background-image: url(../recursos/imagenes/img1.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../recursos/imagenes/img2.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../recursos/imagenes/img3.jpg);
+}
+
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin: 0 15px;
+	padding: 60px 0 0 0;
+	height: 110px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 
+		0 0 1px #fff, 
+		0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover .ch-info-front {
+	-webkit-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-moz-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-o-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	-ms-transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	transform: translate3d(0,280px,0) rotate3d(1,0,0,-90deg);
+	opacity: 0;
+}
+
+.ch-item:hover .ch-info-back {
+	-webkit-transform: rotate3d(1,0,0,0deg);
+	-moz-transform: rotate3d(1,0,0,0deg);
+	-o-transform: rotate3d(1,0,0,0deg);
+	-ms-transform: rotate3d(1,0,0,0deg);
+	transform: rotate3d(1,0,0,0deg);
+	opacity: 1;
+}
+
+/**/
+
+/*Navbar*/
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+@media (min-width: 768px) {
+  .navbar-header {
+    float: left;
+  }
+}
+.navbar:after {
+  clear: both;
+}
+
+.navbar:before,
+.navbar:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+
+#nav {
+margin-bottom:-20px;
+}
+.navbar {
+border-radius:0px !important;
+}
+
+.navbar-new {
+  background-color: rgba(0, 0, 0, 0.40);
+}
+.navbar-new .navbar-brand {
+  color: #f88379;
+}
+}
+.navbar-new .navbar-text {
+  color: #f88379;
+}
+.navbar-new .navbar-nav > li > a {
+  color: #f88379;
+}
+
+/**/
+/*services - cuentos*/
+.services {
+   background: none repeat scroll 0 0 #4D4D4D;
+  padding: 0%;
+  color: #eeeeee;
+  width: 100%;
+  border-bottom:1px solid #D1D1D1 !important;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+main{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/**/
+/*services - cuentos*/
+/*table*/
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+	overflow-y:auto;
+}
+
+th{
+   
+      font-size: 18px;
+	letter-spacing: 1px; 
+   
+  
+}
+
+td{
+   
+      font-size: 14px;
+	letter-spacing: 1px;
+  
+}
+
+th, td {
+    padding: 15px;
+   
+}
+
+tr:hover{background-color:rgba(0, 0, 0, 0.20)}
+/*table*/

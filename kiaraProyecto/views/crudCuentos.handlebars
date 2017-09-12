@@ -1,0 +1,254 @@
+{{#section 'head'}}
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/crudCuentos.js"></script>
+{{/section}}
+
+<div class="container">
+   <div>
+    <form method="post" role="form" id="register-form" autocomplete="off" action="">
+            
+         <div> 
+                <div class="col-md-6 col-md-offset-3 "> 
+                <br />
+                <h3>MEN&Uacute; DE OPCIONES</h3>  
+               </div>
+
+                <div id="tabs">
+                    <br />
+                     <div class="col-md-6 col-md-offset-3 ">
+
+                        <a href="#" tabindex="0">Cuento</a>
+                        <a href="#" tabindex="1">P&aacute;ginas</a>
+                        <a href="#" tabindex="2">Preguntas</a>
+                    </div>         
+                </div>
+        </div>
+           
+            <!---//////////////////////////////////////////////////////////////////////////////////-->  
+       <div>
+           {{#each items}}
+            <div id="tab-0" class="tab">
+            <br />
+            <div class="form-group">
+                <br />
+                <div class="col-md-6 col-md-offset-3 ">
+                    <br />
+                    <label class="lbl" for="name">C&oacute;digo: </label>
+                    <input id="codigo" class="form-control" placeholder="" value="{{id_cuento}}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label class="lbl" for="name">T&iacute;tulo: </label>
+                    <input id="titulo" type="text" class="form-control" placeholder="" value="{{titulo}}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label  class="lbl" for="name">Descripci&oacute;n: </label>
+                    <input id="descripcion" type="text" class="form-control" placeholder="" value="{{descripcion}}">
+                </div>
+            </div>
+            
+             <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label class="lbl"  for="name">Cr&eacute;ditos: </label>
+                    <input id="creditos" type="text" class="form-control" placeholder="" value="{{creditos}}">
+                </div>
+            </div>
+            <br />
+           
+            
+            </div>
+           {{/each}}
+              
+         <!---//////////////////////////////////////////////////////////////////////////////////-->    
+        
+           <div class="col-md-6 col-md-offset-3 ">   
+            <div id="tab-1" class="tab hid">
+                <br />
+                        <input type="button" id="btnNuevaPagina" value="Nueva pagina"/>
+                <br />
+                <div id='dpag' class="esquema" >
+                    <!---//////////////////////////////////////////////////////////////////////////////////-->  
+                    <div id='dfoto' class='hid'>
+                        <select>
+                                {{#each fotos}}
+                                    <option value='{{ruta_libreriafoto}}'>
+                                    {{nombre_foto}}
+                                    </option>
+                                {{/each}}
+                        </select>
+                        <a id='acefoto' href='#'>aceptar</a>
+                        <a id='canfoto' href='#'>cancelar</a>
+                    </div>
+                    
+                    <div id='daudio' class='hid'>
+                        <select>
+                                {{#each audios}}
+                                    <option value='{{ruta_libreriaaudio}}' {{selectedAudio}}>
+                                    {{nombre_audio}}
+                                    </option>
+                                {{/each}}
+                        </select>
+                        <a id='aceaudio' href='#'>aceptar</a>
+                        <a id='canaudio' href='#'>cancelar</a>
+                    </div>
+                    
+                    <!---//////////////////////////////////////////////////////////////////////////////////-->  
+                    
+
+                    <div id='dpagnew' class='pagina hid'>
+                            <label class="lbl">Pagina #</label> <input type='text' class="pg" value='' /><br />
+                            <label class="lbl">Historia</label>
+                        <br />
+                        <textarea class='hst'></textarea>
+                        
+                            <br />
+
+                        <label class="lbl">Fotos</label>
+                        
+                        <a class='selfoto' href="#" ruta='' pagCuento=''>Seleccionar Foto</a>
+                            
+                        <br />
+                        <img id='img-999' class='img' src='' />
+                        <br />
+
+
+
+                        <label class="lbl">Audio</label>
+                        
+                        <a class='selaudio' href="#" ruta='' pagCuento=''>Seleccionar Audio</a>
+                        <br />
+                        <audio controls=''><source id='aud-999' src='' type='audio/mpeg'></audio>
+                        
+                        <br />
+                        <br />
+                        <hr />
+                    </div>
+                    
+                    <br />
+                    <label class="lbl">Contenido</label>
+                    <div id="pag-contenido">
+                        {{#each paginas}}
+                        <div id="pag-{{numero}}" class="pagina">
+                                <label class="lbl">Pagina #</label> <input type='text' class="pg" value='{{numero}}' /><br />
+                                <label class="lbl">Historia</label>
+                            <br />
+                            <textarea class='hst'>
+                                {{historia}}
+                                </textarea>
+
+                                <br />
+
+                            <label class="lbl">Fotos</label>
+
+                            <a class='selfoto' href="#" ruta='{{foto_ruta}}' pagCuento='{{numero}}'>Seleccionar Foto</a>
+
+                            <br />
+                            <img id='img-{{numero}}' class='img' src='{{foto_ruta}}' />
+                            <br />
+
+
+
+                            <label class="lbl">Audio</label>
+
+                            <a class='selaudio' href="#" ruta='{{audio_ruta}}' pagCuento='{{numero}}'>Seleccionar Audio</a>
+                            <br />
+                            <audio controls=''><source id='aud-{{numero}}' src='{{audio_ruta}}' type='audio/mpeg'></audio>
+
+                            <br />
+                            <br />
+                            <hr />
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>            
+            </div>
+        </div>
+          
+        <!---//////////////////////////////////////////////////////////////////////////////////--> 
+          
+        <div class="col-md-6 col-md-offset-3 ">    
+            <div id="tab-2" class="tab hid">
+                <br />
+                <input type="button" id="btnNuevaPregunta" value="Nueva pregunta"/>
+                
+                    <div id='preg-clone' class='pregunta hid'>
+                        
+                            <label class="lbl">Pregunta #</label> <input type='text' class='pre num' value='' /><br />
+                            <label class="lbl">Pregunta </label> <input type='text' class='pre nmb' value=''/><br />
+                            <label class="lbl">Respuesta: </label>
+                            <input type='text' class='pre resp' value=''/>
+
+                             <br />
+                             <div id='preg-clone-opc' class="opciones">
+                              
+                                 <div id='preg-clone-opc-1' class="opcion">
+                                    <label class="lbl">Opcion # 1</label>
+                                    <input type='text' class='pre txtopc' value=''/>
+                                    <br />
+                                </div>     
+                                 <div id='preg-clone-opc-2' class="opcion">
+                                    <label class="lbl">Opcion # 2</label>
+                                    <input type='text' class='pre txtopc' value=''/>
+                                    <br />
+                                </div>     
+                                 <div id='preg-clone-opc-3' class="opcion">
+                                    <label class="lbl">Opcion # 3</label>
+                                    <input type='text' class='pre txtopc' value=''/>
+                                    <br />
+                                </div>     
+                               
+                            </div>
+                            <br />
+                            <hr />
+                    </div>
+
+                <div id='preguntas' class="esquema" >
+                    {{#each preguntas}}
+                     <div id='preg-{{numero}}' class='pregunta'>
+                        <label class="lbl">Pregunta #</label> <input type='text' class='pre num' value='{{numero}}' /><br />
+                        <label class="lbl">Pregunta </label> <input type='text' class='pre nmb' value='{{nombre_pregunta}}'/><br />
+                         <label class="lbl">Respuesta: </label>
+                        <input type='text' class='pre resp' value='{{respuesta}}'/>
+                         
+                         <br />
+                         <div id='preg-{{numero}}-opc' class="opciones">
+                            {{#each opcion}}
+                             <div id='preg-{{numero}}-opc-{{numero_opcion}}' class="opcion">
+                                <label class="lbl">Opcion # {{numero_opcion}}</label>
+                                <input type='text' class='pre txtopc' value='{{texto_opcion}}'/>
+                                <br />
+                            </div>     
+                            {{/each}}
+                        </div>
+
+                        <br />
+                        <hr />
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        <!--  -->
+        </div>
+          
+         <!---//////////////////////////////////////////////////////////////////////////////////--> 
+        
+		
+        <div>    
+            <div class="col-md-3 col-md-offset-6 ">
+                
+                <a id='crudsave' href='crudCuentos'>GUARDAR</a>
+                
+                <a id='cruddel' href='administradorCuentos'>CANCELAR</a>
+            
+            </div>
+        </div>
+    </div>
+</form>
+      <br /> 
+</div>
+</div>

@@ -1,0 +1,26 @@
+<br />
+<br />
+<div id="pag">
+   
+    <div>
+        <br />
+          <span style='width:100px;'>
+              {{mensaje}}
+          </span>
+        <br />
+    </div>
+    <br />
+</div>
+
+<div>
+    {{#if idxbackCuento}}
+        <a class="cssPregunta" href='listaCuentos'>Regresar a lista de Cuentos</a>
+
+    {{else}}
+        <a class="cssPregunta" href='mostrarPreguntas?idcuento={{id_cuento}}&numero={{numero}}'>{{boton}}</a>
+    {{/if}}
+
+</div>
+<br />
+<br />
+<br />

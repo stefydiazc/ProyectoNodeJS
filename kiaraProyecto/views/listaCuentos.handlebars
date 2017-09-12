@@ -1,0 +1,42 @@
+{{#section 'head'}}
+{{/section}}
+
+ <!---///////////////////////////////////-->
+   <table>
+    <thead>
+        <tr>
+            <th> CODIGO</th>
+            <th> TITULO </th>
+            <th> DESCRIPCION </th>
+            <th> CREDITOS </th>
+            <th> ABRIR </th>
+     
+        </tr>
+    </thead>
+    <tbody>
+        {{#each items}}
+        <tr>
+            <th>{{id_cuento}}</th>
+            <th>{{titulo}}</th>
+            <th>{{descripcion}}</th>
+            <th>{{creditos}}</th>
+            <th><a href="presentarCuentos?idcuento={{id_cuento}}" >Abrir</a></th>
+          
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+   <!---///////////////////////////////////////////////////////////////////////////////////--> 
+        <div id="" class="container">
+            <div class="col-md-6 col-md-offset-5 text-center" class="modal fade" >   
+                <div id="paginas1" class=""  role="dialog">
+                </div>
+            </div>    
+        </div>   
+
+   <!---///////////////////////////////////////////////////////////////////////////////////-->
+	<div>
+		 <video id="bgvideo" src= "recursos/video/videoCuentos.mp4" autoplay loop muted>
+		 </video>
+     </div>

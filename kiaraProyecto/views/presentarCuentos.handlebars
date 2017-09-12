@@ -1,0 +1,46 @@
+
+
+<br />
+
+<div id="pag">
+  {{#each pagina}}
+
+    <div class='pag'>
+      <span style='width:100px;'>
+          {{historia}}
+      </span>
+    </div><br />
+
+     <!-- audio -->
+    <div>
+      <audio controls=''><source src='{{audio_ruta}}' type='audio/mpeg'></audio>
+
+    </div><br />
+         
+      <!-- imagen --> 
+    <div>   
+      <img  id="imagen" class='img' src='{{foto_ruta}}'/>
+    </div> <br />
+
+
+      <!-- paginacion-->
+      <div>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
+           {{#if es_primero}} 
+               <div class="w3-left w3-hover-text-khaki" style="color:#777;">&#10094;</div>
+            {{else}}
+                <a class="w3-left w3-hover-text-khaki" href="presentarCuentos?idcuento={{id_cuento}}&idpagina={{anterior}}">&#10094;</a>
+           {{/if}}
+
+        <!--  (numero !== cuento.paginas.length - 1) -->
+        {{#if es_ultimo}} 
+             <a class="w3-right w3-hover-text-khaki" href="mostrarPreguntas?idcuento={{id_cuento}}">Preguntas</a>
+        {{else}}  
+             <a class="w3-right w3-hover-text-khaki" href="presentarCuentos?idcuento={{id_cuento}}&idpagina={{siguiente}}">&#10095;</a>
+        {{/if}}
+       </div>
+     </div>
+  {{/each}}
+</div>
+
+

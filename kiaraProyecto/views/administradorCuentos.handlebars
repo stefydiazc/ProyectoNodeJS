@@ -1,0 +1,41 @@
+{{#section 'head'}}
+{{/section}}
+<br />
+<div>
+    <a id="nuevo" href="crudCuentos?idcuento=0">Nuevo</a>
+</div>
+<br />
+ <!---///////////////////////////////////-->
+ <br />
+   <table>
+    <thead>
+        <tr>
+            <th> CODIGO</th>
+            <th> TITULO </th>
+            <th> DESCRIPCION </th>
+            <th> CREDITOS </th>
+            <th> EDITAR </th>
+            <th> BORRAR </th>
+     
+        </tr>
+    </thead>
+    <tbody>
+        {{#each items}}
+        <tr>
+            <th>{{id_cuento}}</th>
+            <th>{{titulo}}</th>
+            <th>{{descripcion}}</th>
+            <th>{{creditos}}</th>
+            <th><a href="crudCuentos?idcuento={{id_cuento}}">Editar</a></th>
+            <th><a href="administradorCuentos?idcuento={{id_cuento}}">Borrar</a></th>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br />
+
+
+
+
+
