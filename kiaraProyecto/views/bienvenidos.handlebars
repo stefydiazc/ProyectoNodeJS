@@ -1,0 +1,33 @@
+{{#section 'head'}}
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<link rel="stylesheet" href="styles/bienvenidos.css" />
+<script type="text/javascript" src="js/bienvenidos.js"></script>
+
+{{/section}}
+<br />
+
+ <form action="/bienvenidos" method="post" id="targetForm" name="">
+  <div class="imgcontainer">
+      <img src="recursos/imagenes/logo.png" alt="Logo" width="340" height="200" class="img-rounded"/>
+  </div>
+
+  <div class="contenedor">
+    <h1>INICIA SESIÓN EN KIARA</h1>
+       <br/>
+      
+    <input id="nick" name="nick" type="text" placeholder="INGRESE SU NICK"  required>
+
+      <br/>
+      <input id="clave" name="clave" type="password" placeholder="INGRESE SU CLAVE"  required>
+
+      <br/>
+    
+      <a href="listaCuentos" id="entrar" class=""> ENTRAR </a>
+      <hr/>
+  
+      <a href="creaCuenta" id="registrarse" class=""> REG&Iacute;STRARSE</a>
+  </div>
+
+ 
+</form>

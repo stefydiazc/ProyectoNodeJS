@@ -1,3 +1,20 @@
+.menu {
+  width: 100%;
+  float: left;
+}
+
+.menu ul li {
+  float: right;
+  list-style-type: none;
+  text-align: left;
+}
+
+.menu ul li a {
+  padding: 10px;
+}
+
+
+
 #pag{
      margin: auto;
      background-color: #FFEFD5;
@@ -110,8 +127,21 @@
     font-style: normal;
     font-size: 40px;
     color:#e60000;
+    font-variant: small-caps;
 }
 
+#winMensaje{
+    margin: auto;
+    width: 80%;
+    height: 50%;
+    border: 3px solid moccasin ;
+    text-align: center;
+    padding: 10px;
+    font-style: normal;
+    font-size: 40px;
+    color:crimson; 
+    font-variant: small-caps;
+}
 
 /**/
 .block{
@@ -248,6 +278,12 @@ a
   font-weight: 700;
     font-size: 14px;
 	letter-spacing: 1px;
+}
+
+#men{
+  color:  indigo;  
+
+font-size: 25px;  
 }
 
 

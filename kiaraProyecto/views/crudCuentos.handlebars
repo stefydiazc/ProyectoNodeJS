@@ -11,12 +11,14 @@
                 <div class="col-md-6 col-md-offset-3 "> 
                 <br />
                 <h3>MEN&Uacute; DE OPCIONES</h3>  
+               
                </div>
-
+             
+                <br />  
                 <div id="tabs">
                     <br />
                      <div class="col-md-6 col-md-offset-3 ">
-
+                <br />  
                         <a href="#" tabindex="0">Cuento</a>
                         <a href="#" tabindex="1">P&aacute;ginas</a>
                         <a href="#" tabindex="2">Preguntas</a>
@@ -34,28 +36,29 @@
                 <div class="col-md-6 col-md-offset-3 ">
                     <br />
                     <label class="lbl" for="name">C&oacute;digo: </label>
-                    <input id="codigo" class="form-control" placeholder="" value="{{id_cuento}}">
+                   
+                    <input id="codigo" class="form-control" placeholder="" type="text" value="{{id_cuento}}" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-md-6 col-md-offset-3 ">
                     <label class="lbl" for="name">T&iacute;tulo: </label>
-                    <input id="titulo" type="text" class="form-control" placeholder="" value="{{titulo}}">
+                    <input id="titulo" type="text" class="form-control" placeholder="" value="{{titulo}}" required>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="col-md-6 col-md-offset-3 ">
                     <label  class="lbl" for="name">Descripci&oacute;n: </label>
-                    <input id="descripcion" type="text" class="form-control" placeholder="" value="{{descripcion}}">
+                    <input id="descripcion" type="text" class="form-control" placeholder="" value="{{descripcion}}" required>
                 </div>
             </div>
             
              <div class="form-group">
                 <div class="col-md-6 col-md-offset-3 ">
                     <label class="lbl"  for="name">Cr&eacute;ditos: </label>
-                    <input id="creditos" type="text" class="form-control" placeholder="" value="{{creditos}}">
+                    <input id="creditos" type="text" class="form-control" placeholder="" value="{{creditos}}" required>
                 </div>
             </div>
             <br />
@@ -71,6 +74,9 @@
                 <br />
                         <input type="button" id="btnNuevaPagina" value="Nueva pagina"/>
                 <br />
+                
+                
+                
                 <div id='dpag' class="esquema" >
                     <!---//////////////////////////////////////////////////////////////////////////////////-->  
                     <div id='dfoto' class='hid'>
@@ -236,13 +242,13 @@
         </div>
           
          <!---//////////////////////////////////////////////////////////////////////////////////--> 
-        
+        <br/>
 		
         <div>    
             <div class="col-md-3 col-md-offset-6 ">
                 
                 <a id='crudsave' href='crudCuentos'>GUARDAR</a>
-                
+                <hr>
                 <a id='cruddel' href='administradorCuentos'>CANCELAR</a>
             
             </div>

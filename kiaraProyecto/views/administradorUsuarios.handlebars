@@ -1,0 +1,34 @@
+{{#section 'head'}}
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/crudUsuarios.js"></script>
+{{/section}}
+
+  <table>
+    <thead>
+        <tr>
+            <th> CODIGO</th>
+            <th> NICK </th>
+            <th> NOMBRE </th>
+            <th> CORREO </th>
+            
+            <th> EDITAR </th>
+            <th> BORRAR </th>
+     
+        </tr>
+    </thead>
+    <tbody>
+        {{#each usuarios}}
+        <tr>
+            <th>{{id_usuario}}</th>
+            <th>{{nick_usuario}}</th>
+            <th>{{nombre_usuario}}</th>
+            <th>{{correo}}</th>
+           
+            <th><a href="crudUsuarios?idusuario={{id_usuario}}">Editar</a></th>
+            <th><a href="administradorUsuarios?idusuario={{id_usuario}}">Borrar</a></th>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<br />

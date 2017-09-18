@@ -1,0 +1,43 @@
+{{#section 'head'}}
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/crudUsuarios.js"></script>
+{{/section}}
+
+<form id="register_form" action="/crudUsuarios?idusuario={{idusuario}}" method="post">
+
+<div>
+         <div> 
+                
+                <br />
+                <h3>MEN&Uacute; DE OPCIONES</h3>  
+             
+           {{#each usuarios}}
+         
+                    <label class="lbl" for="name">C&oacute;digo: </label>
+                    <label class="form-control" placeholder="">{{id_usuario}}</label>
+                    <input id="codigo_usuario" class="form-control" placeholder="" type="hidden" value="{{id_usuario}}">
+                
+                    <label class="lbl" for="name">Nick: </label>
+                    <input id="nick_usuario" type="text" class="form-control" placeholder="" value="{{nick_usuario}}">
+     
+                    <label  class="lbl" for="name">Nombre: </label>
+                    <input id="nombre_usuario" type="text" class="form-control" placeholder="" value="{{nombre_usuario}}">
+              
+                 
+                    <input id="correo" type="hidden" class="form-control" placeholder="" value="{{correo}}">
+            
+           
+            
+           {{/each}}
+    </div>
+      
+                <a id='crudsaveUsuario' href='crudUsuarios'>GUARDAR</a>
+                <hr/>
+                <a id='cruddelUsuario' href='administradorUsuario'>CANCELAR</a>
+          
+        
+        <!---//////////////////////////////////////////////////////////////////////////////////-->    
+</div>        
+        
+</form>          
+  

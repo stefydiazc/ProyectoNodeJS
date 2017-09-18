@@ -123,7 +123,7 @@ $(function () {
         });
         
         if(msg){
-            alert(msg);
+          //  alert(msg);
             return false;
         }
         
@@ -171,12 +171,12 @@ $(function () {
         });
 
         if(msg){
-            alert(msg);
+           // alert(msg);
             return false;
         }
         
-        alert(JSON.stringify(data.preguntas));
-        alert(JSON.stringify(data.opciones));
+    //    alert(JSON.stringify(data.preguntas));
+    //    alert(JSON.stringify(data.opciones));
 
         
         var request = $.ajax({
@@ -187,11 +187,12 @@ $(function () {
         });
 
         request.done(function( msg ) {
-            alert(msg.msg);
+      //      alert(msg.msg);
+            location.pathname="/administradorCuentos";
         });
 
         request.fail(function( jqXHR, textStatus ) {
-          alert( "Request failed: " + textStatus );
+    //      alert( "Request failed: " + textStatus );
         });
         
         return false;

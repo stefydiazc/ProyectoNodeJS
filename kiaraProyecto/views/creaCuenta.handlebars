@@ -1,0 +1,46 @@
+{{#section 'head'}}
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/creaCuenta.js"></script>
+<link rel="stylesheet" href="styles/bienvenidos.css" />
+
+{{/section}}
+
+<div>
+    
+    
+<form action="/creaCuenta" enctype="application/x-www-form-urlencoded" method="post" id="creaPag" name="">
+ 
+  <div class="contenedor">
+   <h1 class="gtxt">CREA TU CUENTA</h1>
+      <h3><strong>ES GRATIS Y LO SER&Aacute; SIEMPRE.</strong></h3>
+       <br/>
+      
+    <input id="nick" name="nick" type="text" placeholder="INGRESE SU NICK"  required>
+       <br/>
+    <input id="nombre_usuario" name="nombre_usuario" type="text" placeholder="INGRESE SU NOMBRE"  required>
+      <br/>
+    <input id="correo" name="correo" type="text" placeholder="INGRESE SU CORREO"  required>
+      <br/>
+    <input id="clave" name="clave" type="password" placeholder="INGRESE SU CLAVE"  required>
+      <br/>
+      <input id="confirmarClave" name="confirmarClave" type="password" placeholder="INGRESE NUEVAMENTE SU CLAVE"  required>
+      <br/>
+    
+      <div>
+        <br/>
+        <label>T&Eacute;RMINOS Y CONDICIONES:</label>
+        <br/>
+        <label class="center">Al hacer clic en "Crear cuenta", aceptas las Condiciones y confirmas que has leído nuestra Pol&iacute;tica de datos, incluido el Uso de cookies. </label>
+      </div>
+    <br/>
+ 
+    <a id="creaCuenta" href="/bienvenidos" class=""> CREAR CUENTA</a>
+      <hr/>
+  
+      <a id="cancelar" href="index.html" class="">CANCELAR</a>
+  </div>
+
+ 
+</form>
+</div>    
